@@ -1,0 +1,16 @@
+<div class = "questionsPanel">
+    <div class = "center"><p>{{categoryName}}</p></div>
+    <div [ngClass] = "{'twoItem': categoryId == 5}">
+        <div style = "padding: 5px;" *ngFor="let question of questionList">
+        <button [ngClass] = "{disable: question.Answered}" style = "background-color: darkcyan; border: none;" 
+            (click) = "updateQuestionStatus(question)"
+            [routerLink]="['/questionInfo/', question.QuestionInfoId]">
+                <ngb-rating [max]="5" [rate]="question.DifficultyLevel" [readonly]="true"></ngb-rating>
+            </button>
+        <div>
+    </div>
+</div>
+
+
+
+

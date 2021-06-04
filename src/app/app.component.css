@@ -1,0 +1,15 @@
+.appContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.subContainer{
+    margin: 0;
+    position: absolute;
+    top: 39%;
+    -ms-transform: translateY(-50%);
+     transform: translateY(-50%);
+}

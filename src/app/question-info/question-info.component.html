@@ -1,0 +1,20 @@
+<div>
+    <div style = "display: flex; justify-content: center;">
+        <app-question question = "{{questionInfo.Question}}"></app-question>
+        
+    </div>
+
+    <div style= "padding: 12px 0; display: flex; justify-content: center;">
+        <button style = "display: flex; justify-content: center; width: 120px; height: fit-content; border: none; border-radius: 10px; background-color: darkgoldenrod;"  
+        (click) = "showAnswer()"> Show Answer </button>
+    </div>
+    <div [ngClass] = "{hide: hideStatus}">
+        <app-answer answer = "{{questionInfo.Answer}}"></app-answer>
+    </div>
+
+    <div style= "padding: 12px 0; display: flex; justify-content: center;">
+        <button style = "display: flex; justify-content: center; width: 120px; height: fit-content; border: none; border-radius: 10px; background-color: darkgoldenrod;"  
+        [routerLink]="['']"> Menu </button>
+    </div>
+    
+</div>

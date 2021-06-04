@@ -1,0 +1,21 @@
+.questionsPanel{
+    padding: 10px;
+    /* justify-content: center;
+    width: 150px; */
+}
+
+.twoItem{
+    display: flex;
+    flex-wrap: wrap;
+    width: 178px;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.disable{
+    background-color: darkolivegreen!important;
+}
